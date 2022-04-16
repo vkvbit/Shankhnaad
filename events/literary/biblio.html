@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Bibliophile</title>
+	<link rel="stylesheet" type="text/css" href="./../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: auto;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../index.html">
+		                <img
+		                  src="./../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#events" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../sponsors.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../team.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#about" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#contact" class="nav-link">Contact</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="home.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">Bibliophile</h1>
+				<h2>(The Sameekshak)</h2>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead">Introduction</h2><br>
+					<p class="evep" style="text-align:justify;">The participants can choose any novel of their choice and prepare a review of that. They have to present their review in front of the audience as well as the judging panel.</p>
+
+					<br><br>
+
+					<h2 class="evehead">The review should contain </h2><br>
+					<p class="evep">
+						<ol>
+							<li>An introduction to the author(s), including the author's title and place of work, and some indication of who the author is. </li><li>A brief summary of the novel along with an introduction to the main theme of the novel and description of its content.</li><li>An evaluation of the novel's merits, usefulness, and special contributions, along with shortcomings you think are necessary to point out. </li><li>The review should be short but descriptive. Each participant will be given 10 minutes for his review. </li><li>The review should introduce the audience to the book's content and focus on the subject of the book being reviewed.</li>
+
+						</ol>
+					</p>
+
+					
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>

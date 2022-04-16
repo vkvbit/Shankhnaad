@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Supermemer</title>
+	<link rel="stylesheet" type="text/css" href="./../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: auto;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../index.html">
+		                <img
+		                  src="./../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#events" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../sponsors.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../team.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#about" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#contact" class="nav-link">Contact</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="home.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">Supermemer</h1>
+				<h2></h2>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead"></h2><br>
+					<p class="evep" style="text-align:justify;">This event will be conducted in three stages. <br>The very first round will be a quiz which will be based on memes. <br>The second round will be a meme making competition. The participants will be shown an image or they will be given some kind of clue and we will ask them to make a meme related to that in a limited duration of 5 minutes.<br>The final round will be conducted on stage. Only 5 participants will be selected from round 2. These participants will be called upon the stage one by one they will play the main round which will be a game similar to 'KBC'. <br>After the end of last round, the participants will be ranked on the basis of number of correct answers given by them and the winner will be awarded.</p>
+
+					
+
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | An Eristic</title>
+	<link rel="stylesheet" type="text/css" href="./../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: auto;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../index.html">
+		                <img
+		                  src="./../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#events" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../sponsors.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../team.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#about" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#contact" class="nav-link">Contact</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="home.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">An Eristic</h1>
+				<h2>(Debate Competition)</h2>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead">Introduction</h2><br>
+					<p class="evep" style="text-align:justify;">This will be a debate competition having three (3) phases. In each phase a new topic will be given by the coordinator. These topics will be pre-decided and provided to the participants one (1) week before the commencement of event. The participants have to prepare for both in favor as well as against the motion. The coordinator will randomly decide whether a participant will be in the affirmative team or in the opposing team. The language for the debate will be English. The participants will be divided into two teams, affirmative and opposing.<br>Debate opens with the affirmative team presenting their arguments followed by a member of opposing team. This pattern will be repeated until the last member of each team has presented his views. <br>Finally, each team gets an opportunity to counter the arguments of their opponent. <br>Each phase will be of twenty (20) minutes duration. After the end of each phase 1-2 participants will be eliminated from both the teams on the basis of number of valid arguments made by them. There will be a judging panel of three (3) judges. The judges will be taking notes of the arguments made by each team and after the completion of phase 3, the best team wins the debate.</p>
+
+					<br><br>
+
+					<h2 class="evehead">Advisory</h2><br>
+					<p class="evep">
+						<ol>
+							<li>Both the teams should not deviate from the topic of debate. </li><li>Any kind of short-tempered behaviour or use of abusive words will result in immediate disqualification of that particular participant. </li><li>Only logical points with proper evidence to support will be considered valid. </li><li>The arguments made should be short but descriptive.</li><li>Argument made once should not be repeated otherwise it will result in deduction of points from the total score of that team. </li><li>One participant cannot speak continuously for more than 45 seconds. </li>
+
+						</ol>
+					</p>
+
+					<br><br>
+
+					<h2 class="evehead">Note</h2><br>
+					<p class="evep">Eliminated participants will not be considered as winners if their team wins the debate.</p>
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Musical Feet</title>
+	<link rel="stylesheet" type="text/css" href="./../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: auto;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../index.html">
+		                <img
+		                  src="./../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#events" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../sponsors.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../team.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#about" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#contact" class="nav-link">Contact</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="chord.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">Musical Feet</h1>
+				<h2>(Dance Competition)</h2>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead">Introduction</h2><br>
+					<p class="evep" style="text-align:justify;">As we all know, Dance is a performing art form consisting of purposefully selected sequences of human movement which has an aesthetic and symbolic value and is acknowledged as dance by performers culture. So, hold on to your discerning eyes and be ready to share your impressions and ideas from your movements as we bring forth to you an exciting dance competition in the name of “Musical feet”.</p>
+
+					<br><br>
+
+					<h2 class="evehead">Rules & Regulations</h2><br>
+					<p class="evep">
+						<ol>
+							<li>Category: Dance</li><li>Team format: Solo</li><li>Theme/genre: Classical/ Western (Any form)</li><li>Eligibility: Each participant must currently be a college student and they should possess a valid college ID Card.</li><li>Number of Rounds will be two (2): Prelims & Finale</li><li>Time limit: For prelims- 90 seconds; For finale- 2-3 minutes. </li><li>Language of song to be selected: Hindi or English.</li><li>Every participant should abide by the time limit and rules, failing which would result in deduction of Marks.</li><li>Every participant must follow the official Instagram page of Natraj – The Dance Club of our college (User ID: _natraj_aith) </li><li>The participants should submit the songs beforehand to the organizing body.</li><li>The decision of the jury would be final & abiding for all.</li><li>All the participants should prepare themselves according to the criteria set for the competition & should abide by each & every rule mentioned above, failing which would result in strict disciplinary action by the organizing authority.</li>
+
+						</ol>
+					</p>
+
+					<br><br>
+
+					<h2 class="evehead">Criteria of Judgement</h2><br>
+					<p class="evep">Movements, feel/expressions, Technique, choreography and presentation.</p>
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>

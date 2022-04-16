@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Events</title>
+	<link rel="stylesheet" type="text/css" href="./../../style.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: auto;
+			position: absolute;
+			bottom: 0;
+		}
+
+		.eve {
+			position: absolute;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="#landing-page">
+		                <img
+		                  src="./../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="#events" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../sponsors.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../team.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#about" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../index.html#contact" class="nav-link">Contact</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="./../../media/cultural.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+
+				<br><br>
+				 
+				<h1 class="head">CULTURAL</h1>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="flex-container">
+
+					<div class="eveimg">
+
+						<a href="./chord.html">
+							<img src="1.jpeg">
+							<br><br>
+							<h2 class="flex-head">Chord Battle</h2>
+						</a>
+						
+					</div>
+
+					<div class="eveimg">
+
+						<a href="./feet.html">
+							<img src="2.jpg">
+							<br><br>
+							<h2 class="flex-head">Musical Feet</h2>
+						</a>
+						
+					</div>
+
+					<div class="eveimg">
+
+						<a href="./act.html">
+							<img src="">
+							<br><br>
+							<h2 class="flex-head">Avenue Act</h2>
+						</a>
+						
+					</div>
+
+				</div>
+
+				<br><br>
+
+				<div class="flex-container">
+
+					<div class="eveimg">
+
+						<a href="./">
+							<img src="">
+							<br><br>
+							<h2 class="flex-head">Fiery Lyric</h2>
+						</a>
+						
+					</div>
+
+					<div class="eveimg">
+
+						<a href="./">
+							<img src="mrmrs.jpg">
+							<br><br>
+							<h2 class="flex-head">Mr./Mrs. Shankhanaad</h2>
+						</a>
+						
+					</div>
+
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>
