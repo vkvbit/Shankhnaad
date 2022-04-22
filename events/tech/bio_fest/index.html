@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shankhanaad | BioFest</title>
 
 	<style type="text/css">
@@ -24,12 +25,15 @@
 		  box-sizing: border-box;
 		  scroll-behavior: smooth;
 		  color: #e7e7e7;
-		  background: rgb(19, 19, 19);
+		  background: url(bg.jpeg);
+		  position: absolute;
+		  background-size: cover;
+		  background-repeat: no-repeat;
 		}
 
 		a {
 		  text-decoration: none;
-		  color: rgb(3, 155, 155);
+		  color: white;
 		}
 
 		a:hover {
@@ -144,12 +148,12 @@
 		}
 
 		.nav-list {
-		  width: 24rem;
+		  width: 100vw;
 		  height: 100vh;
 		  background-color: #222222;
 		  position: fixed;
 		  top: 0;
-		  right: -26rem;
+		  right: -100vw;
 		  display: flex;
 		  flex-direction: column;
 		  align-items: center;
@@ -210,15 +214,22 @@
 		/* Events */
 
 		.flex-container {
-		  display: flex;
+			display: flex;
 		  flex-wrap: nowrap;
 		  text-align: center;
 		  justify-content: center;
+		  flex-direction: row;
+		}
+
+		@media (max-width: 800px) {
+			.flex-container {
+				flex-direction: column;
+			}
 		}
 
 		.events img {
-		  width: 15vw;
-		  height: 15vw;
+		  width: 300px;
+		  height: 300px;
 		}
 
 		.flex-container > div {
@@ -311,7 +322,7 @@
 						<a href="bioteaser.html">
 							<img src="bioteaser.jpg">
 							<br><br>
-							<h2 class="flex-head">Bio-Teaser</h2>
+							<h2 class="flex-head">Bio-Teaser Hunt</h2>
 						</a>
 						
 					</div>
@@ -357,7 +368,7 @@
 						<a href="pp.html">
 							<img src="pp.webp">
 							<br><br>
-							<h2 class="flex-head">Poster Presentation</h2>
+							<h2 class="flex-head">BIO-CYNOSURE</h2>
 						</a>
 						
 					</div>

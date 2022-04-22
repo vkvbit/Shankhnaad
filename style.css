@@ -261,11 +261,18 @@ nav {
   flex-wrap: nowrap;
   text-align: center;
   justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 .events img {
-  width: 20vw;
-  height: 20vw;
+  width: 300px;
+  height: 300px;
   border-radius: 10%;
 }
 
