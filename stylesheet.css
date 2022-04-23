@@ -4,7 +4,7 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	color: #fff;
 	background-color: #1f2029;
@@ -569,4 +569,14 @@ body.nature-on .nature-section {
 }
 #h:hover, #team:hover {
 	transform: scale(1.1);
+}
+.index-main-logo {
+	width: 600px;
+	height: auto;
+}
+@media (max-width: 800px) {
+	.index-main-logo {
+		width: 90vw;
+		height: auto;
+	}
 }
