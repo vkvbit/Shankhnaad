@@ -25,10 +25,20 @@
 		  box-sizing: border-box;
 		  scroll-behavior: smooth;
 		  color: #e7e7e7;
-		  background: url(bg.jpeg);
-		  position: absolute;
-		  background-size: cover;
-		  background-repeat: no-repeat;
+		}
+
+		.bg {
+			position: fixed;
+			height: 100vh;
+			width: 100vw;
+		}
+
+		.eve {
+			position: absolute;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
 		}
 
 		a {
@@ -227,7 +237,7 @@
 			}
 		}
 
-		.events img {
+		.eve img {
 		  width: 300px;
 		  height: 300px;
 		}
@@ -299,6 +309,10 @@
 
 		    <section class="events" id="events">
 
+		    	<img src="bg.jpeg" class="bg">
+
+		    	<div class="eve">
+
 				<br><br>
 				 
 				<h1 class="head">ENTER THE ARENA</h1>
@@ -353,6 +367,7 @@
 
 					</div>
 
+				</div>
 				</div>
 
 			</section>

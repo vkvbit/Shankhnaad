@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Bionanza</title>
+	<link rel="stylesheet" type="text/css" href="./../../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.eve img {
+			height: 300px;
+			width: 300px;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+			<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../../index.html">
+		                <img
+		                  src="./../../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Contact</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../cdn/brochure.pdf" class="nav-link">Download Brochure</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="./../bg.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">Bionanza</h1>
+				<h2>(Model Presentation)</h2>
+
+				<br><br><br><br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead">Introduction</h2><br>
+					<p class="evep" style="text-align:justify;">Model presentation event that includes working model i.e., physical presentation of a topics that shows how it works related to biotechnology field.</p>
+
+					<br><br>
+
+					<h2 class="evehead">Event Structure</h2><br>
+					<p class="evep">
+						<h3>ROUND 1 (SCREENING):</h3>
+						<ol>
+							<li>The participating teams have to submit an abstract focusing on their model idea.</li><li>The abstract must be in pdf format.</li><li>The selection will be based on abstract submitted.</li><li>All abstracts must be submitted electronically with subject “Abstract submission”.</li><li>Abstract should be send on Mail Id- <a href="mailto:biofest2022@gmail.com">biofest2022@gmail.com</a></li>
+						</ol>
+						<br>
+						<h3>ROUND 2 (PRESENTATION):</h3>
+						<ol>
+							<li>All the shortlisted teams will be asked to present their model in Tech wizard 2022 at DR. A.I.T.H.</li>
+						</ol>
+					</p>
+
+					<br><br>
+
+					<h2 class="evehead">Rules & Regulations</h2><br>
+					<p class="evep">
+						<ol>
+							<li>Maximum five members in a team are allowed.</li><li>The model must be a working model.</li><li>Presence of each member of team is mandatory at the time of presentation round.</li><li>Abstract should not be longer than 200 words involving problem statement, idea proposal, model’s blueprint, result and conclusion.</li><li>All models should be related to biotechnology field.</li>
+						</ol>
+					</p>
+
+					<br><br>
+
+					<h2 class="evehead">Criteria of Judgement</h2><br>
+					<p class="evep">
+						<ol>
+							<li>Models will be judged by the way of presentation and explanation.</li><li>Cost effective and efficient model will be preferred.</li><li>Final decision will be taken by judges of expert panel.</li> 
+						</ol>
+					</p>
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>
