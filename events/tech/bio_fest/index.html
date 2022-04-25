@@ -27,10 +27,12 @@
 		  color: #e7e7e7;
 		}
 
-		.bg {
-			position: fixed;
-			height: 100vh;
+		#myVideo {
 			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			bottom: 0;
+			object-fit: cover;
 		}
 
 		.eve {
@@ -39,6 +41,7 @@
 			width: 90vw;
 			margin-left: 5vw;
 			text-align: center;
+			font-family: "Segoe UI";
 		}
 
 		a {
@@ -309,7 +312,9 @@
 
 		    <section class="events" id="events">
 
-		    	<img src="bg.jpeg" class="bg">
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="bg.mp4" type="video/mp4">
+				</video>
 
 		    	<div class="eve">
 
