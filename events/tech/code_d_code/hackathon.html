@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shankhanaad | Hackathon</title>
+	<link rel="stylesheet" type="text/css" href="./../../../style.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<style type="text/css">
+
+		#myVideo {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			bottom: 0;
+		}
+
+		.eve {
+			position: relative;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+			font-family: "Segoe UI";
+			color: white;
+		}
+
+		.eve1 {
+			background: black;
+			opacity: 0.7;
+		}
+
+		.flex-container img {
+			border: 5px solid white;
+			border-radius: 10%;
+		}
+
+		.events img {
+			height: 15vw;
+			width: 15vw;
+		}
+
+		.flex-head {
+			bottom: 15%;
+		}
+
+		.rule {
+			text-align: left;
+			width: 70vw;
+			margin-left: 10vw;
+			margin-right: 10vw;
+		}
+
+		.evehead {
+			font-size: 2.5rem;
+		}
+
+		.evep {
+			font-size: 2rem;
+		}
+
+		ol {
+			margin-left: 2vw;
+			font-size: 1.9rem;
+		}
+
+	</style>
+
+</head>
+<body>
+
+			<header>
+		      <div class="container">
+		        <nav>
+		          <div class="burger-menu-icon">
+		            <div class="line1"></div>
+		            <div class="line2"></div>
+		            <div class="line3"></div>
+		          </div>
+		          <ul class="nav-list">
+		            <li class="nav-item">
+		              <a href="./../../../index.html">
+		                <img
+		                  src="./../../../images/logo.png"
+		                  alt="Shankhanaad"
+		                  class="profile-pic nav-link"
+		                />
+		                <span class="caption nav-link">Home</span>
+		              </a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Events</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Sponsors</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Team</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../social_initiative.html" class="nav-link">Social Initiative</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">About Us</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../index.html" class="nav-link">Contact</a>
+		            </li>
+		            <li class="nav-item">
+		              <a href="./../../../cdn/brochure.pdf" class="nav-link">Download Brochure</a>
+		            </li>
+		          </ul>
+		        </nav>
+		      </div>
+		    </header>
+
+		    <section class="events" id="events">
+
+		    	<video autoplay muted loop id="myVideo">
+				  <source src="./../bg.mp4" type="video/mp4">
+				</video>
+
+				<div class="eve">
+					<div class="eve1">
+
+				<br><br>
+				 
+				<h1 class="head">Hackathon</h1>
+				<h2></h2>
+
+				<br><br><br><br><br><br><br>
+
+				<div class="rule">
+
+					<h2 class="evehead">Introduction</h2><br>
+					<p class="evep" style="text-align:justify;">A hackathon is an event at which teams of programmers and designers collaborate for a short period of time on a project. Typically, these hackathons are competitions, ending with a panel of judges selecting the winning hack. The aim is to design, build and present the most innovative solution to a problem, and then pitch a final concept, prototype or presentation to the judges.</p>
+
+					<br><br>
+
+					<h2 class="evehead">Rules & Regulations</h2><br>
+					<p class="evep">
+						<ol>
+							<li>All design elements, code, hardware builds, etc. for your project must be created during the event. Third party tools and frameworks are allowed as well as your normal tooling (Gulp, Yeoman, Composer, NPM, Bower, etc.). You should not begin coding in advance, you can plan and discuss with your team in advance. Written documents and design sketches are allowed. You may also incorporate pre-existing material that is freely available to the public into your project, such as public domain images, Creative Commons music, open-source libraries, existing APIs and platforms, and the like.</li><li> Projects must involve writing significant software, though hardware may be incorporated.</li><li>Teams must be comprised of 2 - 4 people.</li><li>The hackathon is a 42-hour contest.</li><li>Teams that make it to the final round will be given up to 12 minutes to present their finished project to a panel of judges.</li><li>At least two team members must be physically present during sign-in, and and to present the project to the judges during their assigned presentation time.</li><li>Any intellectual property developed during the hackathon will belong to the team that developed it. We expect that each team will have an agreement between themselves regarding the IP, but this is not required.</li>
+						</ol>
+					</p>
+
+					<br><br>
+
+					<h2 class="evehead">Criteria of Judgement</h2><br>
+					<p class="evep">
+						<ol>
+							<li>Does this have business value?</li><li>Will it make an impact?</li><li>Is it realistic?</li><li>Have the team innovated to build this project?</li><li>How technically impressive was the hack?</li>
+						</ol>
+					</p>
+					<br><br><br><br><br><br><br><br><br>
+
+				</div>
+				</div>
+				</div>
+
+			</section>
+
+</body>
+
+<script type="text/javascript">
+	
+	/* Navigation */
+
+	// Function expression to select elements `
+
+	const selectElement = (s) => document.querySelector(s);
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	selectElement(".burger-menu-icon").addEventListener("click", () => {
+	    selectElement(".nav-list").classList.toggle("active");
+	    selectElement(".burger-menu-icon").classList.toggle("toggle")
+
+	    navLinks.forEach((link, index) => {
+	        if (link.style.animation){
+	            link.style.animation = ""
+	        }else{
+	            link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	            console.log(index/7 + 0.5)
+	        }
+	    })
+	});
+
+	navLinks.forEach(link => {
+	    link.addEventListener("click", () => {
+	        selectElement(".nav-list").classList.toggle("active");
+	        selectElement(".burger-menu-icon").classList.toggle("toggle");
+
+	        navLinks.forEach((link, index) => {
+	            if (link.style.animation){
+	                link.style.animation = ""
+	            }else{
+	                link.style.animation = `navLinkAnimate 0.5s ease forwards ${ index/7 + 0.5}s`
+	                console.log(index/7 + 0.5)
+	            }
+	        })
+	    })
+	})
+
+</script>
+
+</html>
