@@ -28,6 +28,21 @@
 		  background: rgb(19, 19, 19);
 		}
 
+		.bg {
+			position: fixed;
+			height: 100vh;
+			width: 100vw;
+			object-fit: cover;
+		}
+
+		.eve {
+			position: absolute;
+			top: 0px;
+			width: 90vw;
+			margin-left: 5vw;
+			text-align: center;
+		}
+
 		a {
 		  text-decoration: none;
 		  color: rgb(3, 155, 155);
@@ -224,7 +239,7 @@
 			}
 		}
 
-		.events img {
+		.events img.event {
 		  width: 300px;
 		  height: 300px;
 		}
@@ -296,6 +311,10 @@
 
 		    <section class="events" id="events">
 
+		    	<img src="bg.jpg" class="bg">
+
+		    	<div class="eve">
+
 				<br><br><br><br><br><br><br><br>
 				 
 				<h1 class="head">MODEL EXHIBITION</h1>
@@ -306,8 +325,18 @@
 
 					<div>
 
+						<a href="./electro.html">
+							<img src="./" class="event">
+							<br><br>
+							<h2 class="flex-head">Electroverse</h2>
+						</a>
+						
+					</div>
+
+					<div>
+
 						<a href="./bionanza.html">
-							<img src="./bionanza.jpeg">
+							<img src="./bionanza.jpeg" class="event">
 							<br><br>
 							<h2 class="flex-head">Bionanza</h2>
 						</a>
@@ -317,13 +346,14 @@
 					<div>
 
 						<a href="./model.html">
-							<img src="./chemcosmos.jpeg">
+							<img src="./chemcosmos.jpeg" class="event">
 							<br><br>
 							<h2 class="flex-head">Chem-Cosmos</h2>
 						</a>
 						
 					</div>
 
+				</div>
 				</div>
 
 			</section>
