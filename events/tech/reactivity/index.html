@@ -248,6 +248,38 @@
 
 		.flex-head {
 			font-size: 2rem;
+		  font-family:"a_astro_spaceregular", monospace;
+		  color: grey;
+		  background: whitesmoke;
+		  position: absolute;
+		  bottom: 12%;
+		  width: 100%;
+		  text-align: center;
+		  padding: 5px;
+		}
+
+		.eveimg {
+		  position: relative;
+		}
+
+		.eveimg:hover {
+		  transform: scale(1.1);
+		}
+
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 100%;
+		  height: 0;
+		  transition: .5s ease;
+		}
+
+		.eveimg:hover .overlay {
+		  height: 100%;
 		}
 
 		.head {
@@ -319,7 +351,7 @@
 
 				<div class="flex-container">
 
-					<div>
+					<div class="eveimg">
 
 						<a href="brainteaser.html">
 							<img src="brainteaser.jpg">
@@ -329,7 +361,7 @@
 						
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="chemecar.html">
 							<img src="chemecar.jpg">
@@ -339,7 +371,7 @@
 						
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="saponify.html">
 							<img src="saponify.png">
@@ -355,7 +387,7 @@
 
 				<div class="flex-container">
 
-					<div>
+					<div class="eveimg">
 
 						<a href="hcrane.html">
 							<img src="hcrane.png">
@@ -365,7 +397,7 @@
 
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="hrocket.html">
 							<img src="hrocket.webp">
@@ -375,7 +407,7 @@
 
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="thermite.html">
 							<img src="thermite.jpg">

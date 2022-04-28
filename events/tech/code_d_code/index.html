@@ -250,6 +250,38 @@
 
 		.flex-head {
 			font-size: 2rem;
+		  font-family:"a_astro_spaceregular", monospace;
+		  color: grey;
+		  background: whitesmoke;
+		  position: absolute;
+		  bottom: 12%;
+		  width: 100%;
+		  text-align: center;
+		  padding: 5px;
+		}
+
+		.eveimg {
+		  position: relative;
+		}
+
+		.eveimg:hover {
+		  transform: scale(1.1);
+		}
+
+		.overlay {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background-color: #008CBA;
+		  overflow: hidden;
+		  width: 100%;
+		  height: 0;
+		  transition: .5s ease;
+		}
+
+		.eveimg:hover .overlay {
+		  height: 100%;
 		}
 
 		.head {
@@ -324,7 +356,7 @@
 
 				<div class="flex-container">
 
-					<div>
+					<div class="eveimg">
 
 						<a href="hackathon.html">
 							<img src="hackathon.jpeg" class="event">
@@ -334,7 +366,7 @@
 						
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="coding.html">
 							<img src="coding.jpg" class="event">
@@ -344,7 +376,7 @@
 
 					</div>
 
-					<div>
+					<div class="eveimg">
 						<a href="bug.html">
 							<img src="bug.jpg" class="event">
 							<br><br>
@@ -359,7 +391,7 @@
 
 				<div class="flex-container">
 
-					<div>
+					<div class="eveimg">
 						<a href="app.html">
 							<img src="app.jpeg" class="event">
 							<br><br>
@@ -368,7 +400,7 @@
 						
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="web.html">
 							<img src="web.jpeg" class="event">
@@ -378,7 +410,7 @@
 
 					</div>
 
-					<div>
+					<div class="eveimg">
 
 						<a href="logo.html">
 							<img src="logo.png" class="event">
@@ -394,7 +426,7 @@
 
 				<div class="flex-container">
 
-					<div>
+					<div class="eveimg">
 
 						<a href="cybersec.html">
 							<img src="cybersec.jpg" class="event">
