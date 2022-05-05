@@ -114,7 +114,7 @@
 		div.form {
 			margin-left: 20vw;
 			margin-right: 20vw;
-			margin-top: 10vh;
+			margin-top: 5vh;
 			margin-bottom: 10vh;
 		}
 		h3 {
@@ -157,7 +157,7 @@
 	</div>
 
 	<div class="note">
-		<h4><b>NOTE:</b> Every individual should carry a photocopy of their personal ID like Aadhaar Card (prefered), PAN Card, Driving License.</h4>
+		<h4><b>NOTE:</b>This registration form is only valid for students of Dr. AITH.<br><br> Every individual should carry a photocopy of their personal ID like Aadhaar Card (prefered), PAN Card, Driving License.</h4>
 	</div>
 
 	<div class="form">
@@ -165,19 +165,34 @@
 		<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://submit-form.com/iHmn7NmB" method="post">
 		  <fieldset id="fs-frm-inputs">
 
-		  	<div class="basic">
+		  	<div class="lead">
 
-		  		<h3>College Details</h3>
+				<h3>Participant Details</h3>
 
-			    <label for="college-name">College Name: *</label>
-			    <input type="text" name="college-name" id="college-name" placeholder="College Name" required>
+				<label for="full-name">Full Name: *</label>
+			    <input type="text" name="full-name" id="full-name" placeholder="Full Name" required>
 
-			    <label for="reside">Where do you reside: *</label><br>
-			    
-				<label for="reside"> <input type="radio" name="reside" value="Kanpur" onclick="inside()"> Kanpur</label>				
-				<label for="reside"> <input type="radio" name="reside" value="Outside kanpur" onclick="outside()"> Outside Kanpur</label>
+			    <label for="roll-no">University Roll number: *</label>
+			    <input type="text" name="roll-no" id="roll-no" placeholder="Roll Number" required>
 
-			</div>
+			    <label for="email">Email Address: *</label>
+			    <input type="email" name="email" id="email" placeholder="Email" required>
+
+			    <label for="phone">Phone Number: *</label>
+			    <input type="text" name="phone" id="phone" placeholder="Mobile Number" required>
+
+			    <label for="aadhar-no">Aadhar Number: *</label>
+			    <input type="text" name="aadhar-no" id="aadhar-no" placeholder="Aadhar Number" required>
+
+			    <label for="vaccine">Vaccination Status: *</label>
+		    	<select name="vaccine" required>
+		    		<option value="select" selected disabled>Select</option>
+		    		<option value="fully">Fully Vaccinated</option>
+		    		<option value="partial">Partially Vaccinated</option>
+		    		<option value="not-yet">Not Vaccinated Yet</option>
+		    	</select>
+
+		    </div>
 
 			<div class="events">
 
@@ -525,52 +540,13 @@
 
 			</div>
 
-			<div class="lead">
-
-				<h3>Participant Details</h3>
-
-				<label for="lead-name">Full Name: *</label>
-			    <input type="text" name="lead-name" id="lead-name" placeholder="Lead Name" required>
-
-			    <label for="roll-no">University Roll number: *</label>
-			    <input type="text" name="roll-no" id="roll-no" placeholder="Roll Number" required>
-
-			    <label for="lead-email">Email Address: *</label>
-			    <input type="email" name="lead-email" id="lead-email" placeholder="Email" required>
-
-			    <label for="lead-phone">Phone Number: *</label>
-			    <input type="text" name="lead-phone" id="lead-phone" placeholder="Mobile Number" required>
-
-			    <label for="aadhar-no">Aadhar Number: *</label>
-			    <input type="text" name="aadhar-no" id="aadhar-no" placeholder="Aadhar Number" required>
-
-			    <label for="vaccine">Vaccination Status: *</label>
-		    	<select name="vaccine" required>
-		    		<option value="select" selected disabled>Select</option>
-		    		<option value="fully">Fully Vaccinated</option>
-		    		<option value="partial">Partially Vaccinated</option>
-		    		<option value="not-yet">Not Vaccinated Yet</option>
-		    	</select>
-
-		    </div>
-
 			<div class="payment">
 
-				<h3>Payment</h3>
+				<h3>User ID</h3>
 				
 				<input type="button" onclick="createUserId()" value="Generate User Id">
 				<label for="user-id">User Id (If you have regestered before):</label>
 			    <input type="text" name="user-id" id="user-id" placeholder="User Id" disabled>
-
-			    <label for="fee-amount">You have to pay : Rs<input type="text" name="fee-amount" id="fee-amount" style="margin-left: 10px;"></label>
-
-			    <h4>Payment instruction:</h4>
-			    <p class="payment-instruct">
-			    	Pay the above fee at UPI id: <b>harshitkumarr9991@ybl</b><br>
-			    	or scan QR code :<br> <img src="./cdn/upi.jpeg" width="200px" height="auto">
-			    	<br><br>
-			    	and Send the Screenshot of payment and your User Id to WhatsApp number <a href="https://wa.me/918052355462">8052355462</a>
-			    </p>
 
 			</div>
 
@@ -603,14 +579,6 @@
 	</div>
 
 	<script type="text/javascript">
-		
-		function inside() {
-			document.getElementById("fee-amount").value = 500; 
-		}
-
-		function outside() {
-			document.getElementById("fee-amount").value = 1100; 
-		}
 
 		function createUserId() {
 			document.getElementById("user-id").value = '22' + document.getElementById("lead-phone").value;
